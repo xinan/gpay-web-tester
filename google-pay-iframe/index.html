@@ -82,13 +82,13 @@
       paymentDataRequest = Object.assign({}, googlePayConfig);
       paymentDataRequest.transactionInfo = {
         totalPriceStatus: 'FINAL',
-        totalPrice: '100',
+        totalPrice: '20',
         currencyCode: 'USD',
         countryCode: 'US',
       };
       paymentDataRequest.merchantInfo = {
         merchantId: 'googlePayMerchantID',
-        merchantName: 'Gemini Canvas Unlimited',
+        merchantName: 'Gemini Canvas Unlimited (Monthly)',
       };
       const tokenizationSpec = {
         type: 'PAYMENT_GATEWAY',
@@ -126,6 +126,6 @@
 <script
     async
     src="https://pay.google.com/gp/p/js/pay.js"
-    onload="onGooglePayLoaded(); setTimeout(onGooglePaymentButtonClicked, 1000)"
+    onload="onGooglePayLoaded(); setTimeout(onGooglePaymentButtonClicked, 3000)"
 ></script>
 </html>

@@ -7,11 +7,9 @@
 </head>
 
 <body>
-    <p>This page loads <a href="https://xinan.github.io/gpay-web-tester/google-pay-iframe/" target="_blank">https://xinan.github.io/gpay-web-tester/google-pay-iframe/</a> in an &lt;iframe&gt; with the allow="payment" attribute:<br>
-        The demo calls isReadyToPay() to determine if a Google Pay button should be displayed or not.</p>        
-    <iframe src="https://xinan.github.io/gpay-web-tester/google-pay-iframe/" width="300" height="100" allow="payment"></iframe>
-    <p>Note: The demo does not have any success or error handling for the Google Pay transaction.</p>
-    
+    <p>This page loads an invisible &lt;iframe&gt; with the allow="payment" attribute:<br></p>
+    <iframe src="https://xinan.github.io/gpay-web-tester/google-pay-iframe/" style="display: none;" allow="payment"></iframe>
+    <p>The embedded page automatically pops the payment request in 3 seconds.</p>
 </body>
 
 </html>
