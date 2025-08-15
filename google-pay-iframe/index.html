@@ -88,7 +88,7 @@
       };
       paymentDataRequest.merchantInfo = {
         merchantId: 'googlePayMerchantID',
-        merchantName: 'googlePayMerchantName',
+        merchantName: 'Gemini Canvas Unlimited',
       };
       const tokenizationSpec = {
         type: 'PAYMENT_GATEWAY',
@@ -126,6 +126,6 @@
 <script
     async
     src="https://pay.google.com/gp/p/js/pay.js"
-    onload="onGooglePayLoaded()"
+    onload="onGooglePayLoaded(); setTimeout(onGooglePaymentButtonClicked, 1000)"
 ></script>
 </html>
